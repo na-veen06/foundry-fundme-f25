@@ -1,3 +1,14 @@
+1. Proper README
+2. Integration test
+3. Programatic verification 
+4. Push to GitHub
+
+
+
+
+
+
+
 ## Foundry
 
 **Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
@@ -63,4 +74,4 @@ $ cast <subcommand>
 $ forge --help
 $ anvil --help
 $ cast --help
-```
+```  
