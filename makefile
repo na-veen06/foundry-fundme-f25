@@ -33,7 +33,7 @@ install :; forge install Cyfrin/foundry-devops@0.1.0 --no-commit && forge instal
 # Update Dependencies
 update:; forge update
 
-build:; forge build
+#build:; forge build
 
 test :; forge test 
 
@@ -50,8 +50,8 @@ ifeq ($(findstring --network sepolia,$(ARGS)),--network sepolia)
 endif
 
 deploy:
-	@forge script script/DeployBasicNft.s.sol:DeployBasicNft $(NETWORK_ARGS)
-
+	@forge script script/DeployFundme.s.sol:DeployFundMe $(NETWORK_ARGS)
+#DeployBasicNft.s.sol:DeployBasicNft
 mint: 
 	@forge script script/Interactions.s.sol:MintBasicNft $(NETWORK_ARGS)
 
